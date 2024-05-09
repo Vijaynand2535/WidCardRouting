@@ -1,16 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { NavbrComponent } from './shared/components/navbr/navbr.component';
+import { ProductsComponent } from './shared/components/products/products.component';
+import { UsersComponent } from './shared/components/users/users.component';
+import { HomeComponent } from './shared/components/home/home.component';
+import { ApproutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbrComponent,
+    ProductsComponent,
+    UsersComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ApproutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
